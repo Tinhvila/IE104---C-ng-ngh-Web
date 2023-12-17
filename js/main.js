@@ -260,6 +260,26 @@ function HeaderSigined() {
     loginButton.style.display = "none";
 }
 
+function HeaderLogouted() {
+    document.getElementsByClassName("myOrder")[0].style.display = "none";
+    document.getElementsByClassName("myProfile")[0].style.display = "none";
+    signupButton.style.display = "block";
+    loginButton.style.display = "block";
+
+    let UserInLocalStorage = JSON.parse(localStorage.getItem(LIST_USERS));
+    let arrListUsers = UserInLocalStorage;
+    if (!Array.isArray(arrListUsers)) {
+        arrListUsers = [arrListUsers];
+    }
+    for (let i = 0; i < arrListUsers.length; i++) {
+        if (arrListUsers[i].LoginStatus == true) {
+            arrListUsers[i].LoginStatus = false;
+            localStorage.setItem(LIST_USERS, JSON.stringify(arrListUsers));
+            return;
+        }
+    }
+}
+
 // Hàm để khi reload nó vẫn giữ trạng thái đã đăng nhập
 function LoginStatus() {
     UserInLocalStorage = JSON.parse(localStorage.getItem(LIST_USERS)) || [];
@@ -280,3 +300,24 @@ function LoginStatus() {
 }
 //Gọi hàm
 LoginStatus();
+
+let myProfile = document.getElementsByClassName("myProfile")[0];
+let logoutBtn = document.getElementsByClassName("logoutBtn")[0];
+
+myProfile.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (logoutBtn.style.display == "block")
+        logoutBtn.style.display = "none"
+    else
+        logoutBtn.style.display = "block"
+})
+
+window.addEventListener("click", () => {
+
+    logoutBtn.style.display = "none";
+})
+
+logoutBtn.addEventListener("click", () => {
+    HeaderLogouted();
+
+})

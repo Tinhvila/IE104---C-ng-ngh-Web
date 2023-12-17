@@ -8,9 +8,8 @@
     <link rel="shortcut icon" type="image/png" href="image/logo/logo.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/root.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/lifelogo-easy" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -99,6 +98,7 @@
                 <div class="myProfile">
                     <i class="fa-solid fa-user"></i>
                     <p id="usernameProfile"></p>
+                    <div class="logoutBtn">Đăng xuất</div>
                 </div>
             </div>
 
@@ -198,8 +198,7 @@
                     <p class="messageError messageErrorEmailLogin"></p>
                 </div>
                 <div class="authen-form-group">
-                    <input type="password" minlength="8" placeholder="Mật khẩu" class="authen-form__input"
-                        id="loginPassword">
+                    <input type="password" minlength="8" placeholder="Mật khẩu" class="authen-form__input" id="loginPassword">
                     <p class="messageError messageErrorPasswordLogin"></p>
                 </div>
                 <a href="" class="forget-password">Quên mật khẩu?</a>
@@ -318,148 +317,135 @@
             </div>
             <div class="Advert__img">
                 <img class="Advert__img--img" src="./image/laptop/UNISON_Laptop_360_Touch_Screen.png" alt="">
-                <p class="Advert__img--note"><span class="newPrice">2.199.000đ</span><span
-                        class="oldPrice">2.499.000đ</span></p>
-                <button class="button Advert__img--button">Xem chi tiết</button>
-            </div>
-        </section>
-        <section class="AdvertFlexContainer AdvertFlexContainerFirst">
-            <div class="Advert--content">
-                <h1 class="Advert--content--heading">
-                    Màn hình Dell UltraSharp
-                </h1>
-                <p class="Advert--content--text ">
-                    Màn hình Dell UltraSharp U2723QE là màn hình 27 inch đầu tiên trên Thế giới sở hữu độ phân giải 4K.
-                    Thiết kế màn hình hiện đại với tông màu trung tính hầu như phù hợp với mọi không gian làm việc. Với
-                    độ phân giải 4K và tấm nền IPS Black cải thiện độ tương
-                    phản và sắc đen hiển thị, Dell UltraSharp U2723QE sẽ là một model màn hình máy tính không thể bỏ qua
-                    cho dân thiết kế đồ họa.
-                </p>
-            </div>
-            <div class="Advert__img">
-                <img class="Advert__img--img" src="./image/monitors/dell/dell_u2723qe.png" alt="">
-                <p class="Advert__img--note "><span class="newPrice">12.999.000đ</span><span
-                        class="oldPrice oldPriceFirst">15.299.000đ</span></p>
-                <button class="button Advert__img--button Advert__img--buttonFirst">Xem chi tiết</button>
-            </div>
-        </section>
-    </main>
+                <p class="Advert__img--note"><span class="newPrice">2.199.000đ</span><span class="oldPrice">2.499.000đ</span></p>
+                        <button class="button Advert__img--button">Xem chi tiết</button>
+                    </div>
+                    </section>
+                    <section class="AdvertFlexContainer AdvertFlexContainerFirst">
+                        <div class="Advert--content">
+                            <h1 class="Advert--content--heading">
+                                Màn hình Dell UltraSharp
+                            </h1>
+                            <p class="Advert--content--text ">
+                                Màn hình Dell UltraSharp U2723QE là màn hình 27 inch đầu tiên trên Thế giới sở hữu độ phân giải 4K. Thiết kế màn hình hiện đại với tông màu trung tính hầu như phù hợp với mọi không gian làm việc. Với độ phân giải 4K và tấm nền IPS Black cải thiện độ tương
+                                phản và sắc đen hiển thị, Dell UltraSharp U2723QE sẽ là một model màn hình máy tính không thể bỏ qua cho dân thiết kế đồ họa.
+                            </p>
+                        </div>
+                        <div class="Advert__img">
+                            <img class="Advert__img--img" src="./image/monitors/dell/dell_u2723qe.png" alt="">
+                            <p class="Advert__img--note "><span class="newPrice">12.999.000đ</span><span class="oldPrice oldPriceFirst">15.299.000đ</span></p>
+                            <button class="button Advert__img--button Advert__img--buttonFirst">Xem chi tiết</button>
+                        </div>
+                    </section>
+                    </main>
 
 
-    <!-- Leave Email -->
-    <section class="leaveEmail">
-        <div class="leaveEmail--content">
-            <h1 class="leaveEmail--content--heading">
-                Để lại email để nhận thông báo mới nhất
-            </h1>
-            <p class="leaveEmail--content--text">
-                Hãy để lại email của bạn để nhận những thông báo sản phẩm và khuyến mãi mới nhất từ chúng tôi!
-            </p>
+                    <!-- Leave Email -->
+                    <section class="leaveEmail">
+                        <div class="leaveEmail--content">
+                            <h1 class="leaveEmail--content--heading">
+                                Để lại email để nhận thông báo mới nhất
+                            </h1>
+                            <p class="leaveEmail--content--text">
+                                Hãy để lại email của bạn để nhận những thông báo sản phẩm và khuyến mãi mới nhất từ chúng tôi!
+                            </p>
 
-        </div>
+                        </div>
 
-        <div class="leaveEmail--email"></div>
-        <form action="" class="leaveEmail--input">
-            <input type="text" placeholder="Email của bạn">
-            <button class="leaveEmail__btn">
+                        <div class="leaveEmail--email"></div>
+                        <form action="" class="leaveEmail--input">
+                            <input type="text" placeholder="Email của bạn">
+                            <button class="leaveEmail__btn">
                 Gửi
             </button>
-        </form>
+                        </form>
 
-    </section>
+                    </section>
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="emailForProduct">
+                    <!-- footer -->
+                    <footer class="footer">
+                        <div class="emailForProduct">
 
-        </div>
+                        </div>
 
-        <div class="firstWrapperFooter">
-            <div class="logoInforFooter">
-                <a href="index.html"><img class="logo" src="./image/logo/logo.png" alt=""></a>
-                <p class="footerSlogan">TUTIKI</p>
-                <p class="footerSlogan">Thế giới mua sắm của bạn</p>
-            </div>
+                        <div class="firstWrapperFooter">
+                            <div class="logoInforFooter">
+                                <a href="index.html"><img class="logo" src="./image/logo/logo.png" alt=""></a>
+                                <p class="footerSlogan">TUTIKI</p>
+                                <p class="footerSlogan">Thế giới mua sắm của bạn</p>
+                            </div>
 
-            <ul class="flexContainerFooter">
+                            <ul class="flexContainerFooter">
 
-                <li class="customerSupport"><span>Chăm sóc khách hàng</span>
-                    <ul>
-                        <li>Thẻ ưu đãi</li>
-                        <li>Hướng dẫn đăng ký</li>
-                        <li>Hướng dẫn trả góp</li>
-                        <li>Hướng dẫn thanh toán</li>
-                    </ul>
-                </li>
+                                <li class="customerSupport"><span>Chăm sóc khách hàng</span>
+                                    <ul>
+                                        <li>Thẻ ưu đãi</li>
+                                        <li>Hướng dẫn đăng ký</li>
+                                        <li>Hướng dẫn trả góp</li>
+                                        <li>Hướng dẫn thanh toán</li>
+                                    </ul>
+                                </li>
 
-                <li class="purchasePolicy"><span>Chính sách mua hàng</span>
-                    <ul>
-                        <li>Chính sách bảo hành</li>
-                        <li>Chính sách thanh toán</li>
-                        <li>Giao hàng và lắp đặt tại nhà</li>
-                        <li>Điều kiện đổi trả</li>
-                        <li>Dịch vụ vệ sinh tại nhà</li>
-                    </ul>
-                </li>
+                                <li class="purchasePolicy"><span>Chính sách mua hàng</span>
+                                    <ul>
+                                        <li>Chính sách bảo hành</li>
+                                        <li>Chính sách thanh toán</li>
+                                        <li>Giao hàng và lắp đặt tại nhà</li>
+                                        <li>Điều kiện đổi trả</li>
+                                        <li>Dịch vụ vệ sinh tại nhà</li>
+                                    </ul>
+                                </li>
 
-                <li class="TutikiInformation"><span>Về Tutiki</span>
-                    <ul>
-                        <li>Giới thiệu</li>
-                        <li>Hệ thống cửa hàng</li>
-                        <li>Trung tâm bảo hành</li>
-                        <li>Chính sách bảo mật</li>
-                        <li>Tin công nghệ</li>
-                        <li>Tuyển dụng</li>
-                    </ul>
-                </li>
+                                <li class="TutikiInformation"><span>Về Tutiki</span>
+                                    <ul>
+                                        <li>Giới thiệu</li>
+                                        <li>Hệ thống cửa hàng</li>
+                                        <li>Trung tâm bảo hành</li>
+                                        <li>Chính sách bảo mật</li>
+                                        <li>Tin công nghệ</li>
+                                        <li>Tuyển dụng</li>
+                                    </ul>
+                                </li>
 
-                <li class="TutikiCommunity"><span>Liên hệ Tutiki</span>
-                    <ul>
-                        <li>Mua hàng: 18001234</li>
-                        <li>Chăm sóc khách hàng: 18005678</li>
-                        <li>Liên hệ bảo hành: 18001008</li>
+                                <li class="TutikiCommunity"><span>Liên hệ Tutiki</span>
+                                    <ul>
+                                        <li>Mua hàng: 18001234</li>
+                                        <li>Chăm sóc khách hàng: 18005678</li>
+                                        <li>Liên hệ bảo hành: 18001008</li>
 
-                    </ul>
-                </li>
-            </ul>
+                                    </ul>
+                                </li>
+                            </ul>
 
-        </div>
+                        </div>
 
-        <hr>
-
-
-        <div class="secondWrapperFooter">
-
-            <div class="contactMedia">
-                <span>LIÊN HỆ NGAY</span>
-                <div class="media">
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000636033/file/facebook_1_0e31d70174824ea184c759534430deec.png"
-                            alt=""></a>
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000722513/file/tiktok-logo_fe1e020f470a4d679064cec31bc676e4.png"
-                            alt=""></a>
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000636033/file/youtube_1_d8de1f41ca614424aca55aa0c2791684.png"
-                            alt=""></a>
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000636033/file/group_1_54d23abd89b74ead806840aa9458661d.png"
-                            alt=""></a>
-                </div>
-            </div>
+                        <hr>
 
 
-            <div class="logoNotif">
-                <img src="//theme.hstatic.net/200000722513/1001090675/14/logo-bct.png?v=2862" alt="">
-            </div>
-        </div>
+                        <div class="secondWrapperFooter">
 
-    </footer>
+                            <div class="contactMedia">
+                                <span>LIÊN HỆ NGAY</span>
+                                <div class="media">
+                                    <a href="#"><img src="https://file.hstatic.net/200000636033/file/facebook_1_0e31d70174824ea184c759534430deec.png" alt=""></a>
+                                    <a href="#"><img src="https://file.hstatic.net/200000722513/file/tiktok-logo_fe1e020f470a4d679064cec31bc676e4.png" alt=""></a>
+                                    <a href="#"><img src="https://file.hstatic.net/200000636033/file/youtube_1_d8de1f41ca614424aca55aa0c2791684.png" alt=""></a>
+                                    <a href="#"><img src="https://file.hstatic.net/200000636033/file/group_1_54d23abd89b74ead806840aa9458661d.png" alt=""></a>
+                                </div>
+                            </div>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/nav-open.js"></script>
-    <script src="./js/search.js"></script>
-    <script src="./js/slider_auto.js"></script>
+
+                            <div class="logoNotif">
+                                <img src="//theme.hstatic.net/200000722513/1001090675/14/logo-bct.png?v=2862" alt="">
+                            </div>
+                        </div>
+
+                    </footer>
+
+                    <script src="./js/main.js"></script>
+                    <script src="./js/nav-open.js"></script>
+                    <script src="./js/search.js"></script>
+                    <script src="./js/slider_auto.js"></script>
 </body>
 
 </html>

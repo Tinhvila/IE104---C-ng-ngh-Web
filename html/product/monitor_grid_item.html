@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/root.css">
     <link rel="stylesheet" href="../../css/grid.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/lifelogo-easy" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -87,7 +86,8 @@
                 </div>
                 <div class="myProfile">
                     <i class="fa-solid fa-user"></i>
-                    <p id="usernameProfile">Phạm Đăng Tỉnh</p>
+                    <p id="usernameProfile"></p>
+                    <div class="logoutBtn">Đăng xuất</div>
                 </div>
             </div>
 
@@ -184,8 +184,7 @@
                     <p class="messageError messageErrorEmailLogin"></p>
                 </div>
                 <div class="authen-form-group">
-                    <input type="password" minlength="8" placeholder="Mật khẩu" class="authen-form__input"
-                        id="loginPassword">
+                    <input type="password" minlength="8" placeholder="Mật khẩu" class="authen-form__input" id="loginPassword">
                     <p class="messageError messageErrorPasswordLogin"></p>
                 </div>
                 <a href="" class="forget-password">Quên mật khẩu?</a>
@@ -265,165 +264,164 @@
 
     <main class="mainContent">
         <span class="breadcrumb"><i class="fa-solid fa-house-chimney"></i> Trang chủ > Màn hình</span>
-        <div class="grid-container-all">
-            <div class="grid-sidebar-container">
-                <div class="grid-sidebar">
-                    <p class="grid-sidebar-title">Theo hãng</p>
-                    <ul class="grid-sidebar-option-list">
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="DELL">
-                            <label for="DELL">DELL</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="LG">
-                            <label for="LG">LG</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="ACER">
-                            <label for="ACER">ACER</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="ASUS">
-                            <label for="ASUS">ASUS</label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-sidebar">
-                    <p class="grid-sidebar-title">Theo nhu cầu</p>
-                    <ul class="grid-sidebar-option-list">
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Gia đình">
-                            <label for="Gia đình">Gia đình</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Văn phòng">
-                            <label for="Văn phòng">Văn phòng</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Doanh nghiệp">
-                            <label for="Doanh nghiệp">Doanh nghiệp</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Doanh nhân">
-                            <label for="Doanh nhân">Doanh nhân</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Gaming">
-                            <label for="Gaming">Gaming</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Đồ họa - Kỹ thuật">
-                            <label for="Đồ họa - Kỹ thuật">Đồ họa - Kỹ thuật</label>
-                        </li>
-                        <li>
-                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Học sinh/Sinh viên">
-                            <label for="Học sinh/Sinh viên">Học sinh/Sinh viên</label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-sidebar">
-                    <p class="grid-sidebar-title">Theo giá tiền</p>
-                    <ul class="grid-sidebar-option-list">
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="l2,000,000đ">
-                            <label for="l2,000,000đ">&lt; 2,000,000đ</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="2,000,000đ - 3,000,000đ">
-                            <label for="2,000,000đ - 3,000,000đ">Từ 2,000,000đ - 3,000,000đ</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="3,000,000đ - 6,000,000đ">
-                            <label for="3,000,000đ - 6,000,000đ">Từ 3,000,000đ - 6,000,000đ</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox"
-                                value="6,000,000đ - 10,000,000đ">
-                            <label for="6,000,000đ - 10,000,000đ">Từ 6,000,000đ - 10,000,000đ</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="g10,000,000đ">
-                            <label for="g10,000,000đ">&gt; 10,000,000đ</label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-sidebar">
-                    <p class="grid-sidebar-title">Theo kích thước</p>
-                    <ul class="grid-sidebar-option-list">
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="14 Inches">
-                            <label for="14inch">14 Inches</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="15.6 Inches">
-                            <label for="15.6inch">15.6 Inches</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="22 Inches">
-                            <label for="22 Inches"> 22 Inches </label>
-                        </li>
+                        <div class="grid-container-all">
+                            <div class="grid-sidebar-container">
+                                <div class="grid-sidebar">
+                                    <p class="grid-sidebar-title">Theo hãng</p>
+                                    <ul class="grid-sidebar-option-list">
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="DELL">
+                                            <label for="DELL">DELL</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="LG">
+                                            <label for="LG">LG</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="ACER">
+                                            <label for="ACER">ACER</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="ASUS">
+                                            <label for="ASUS">ASUS</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="grid-sidebar">
+                                    <p class="grid-sidebar-title">Theo nhu cầu</p>
+                                    <ul class="grid-sidebar-option-list">
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Gia đình">
+                                            <label for="Gia đình">Gia đình</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Văn phòng">
+                                            <label for="Văn phòng">Văn phòng</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Doanh nghiệp">
+                                            <label for="Doanh nghiệp">Doanh nghiệp</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Doanh nhân">
+                                            <label for="Doanh nhân">Doanh nhân</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Gaming">
+                                            <label for="Gaming">Gaming</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Đồ họa - Kỹ thuật">
+                                            <label for="Đồ họa - Kỹ thuật">Đồ họa - Kỹ thuật</label>
+                                        </li>
+                                        <li>
+                                            <input class="grid-sidebar-option-checkbox" type="checkbox" val="Học sinh/Sinh viên">
+                                            <label for="Học sinh/Sinh viên">Học sinh/Sinh viên</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="grid-sidebar">
+                                    <p class="grid-sidebar-title">Theo giá tiền</p>
+                                    <ul class="grid-sidebar-option-list">
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="l2,000,000đ">
+                                            <label for="l2,000,000đ">&lt; 2,000,000đ</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="2,000,000đ - 3,000,000đ">
+                                            <label for="2,000,000đ - 3,000,000đ">Từ 2,000,000đ - 3,000,000đ</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="3,000,000đ - 6,000,000đ">
+                                            <label for="3,000,000đ - 6,000,000đ">Từ 3,000,000đ - 6,000,000đ</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="6,000,000đ - 10,000,000đ">
+                                            <label for="6,000,000đ - 10,000,000đ">Từ 6,000,000đ - 10,000,000đ</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="g10,000,000đ">
+                                            <label for="g10,000,000đ">&gt; 10,000,000đ</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="grid-sidebar">
+                                    <p class="grid-sidebar-title">Theo kích thước</p>
+                                    <ul class="grid-sidebar-option-list">
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="14 Inches">
+                                            <label for="14inch">14 Inches</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="15.6 Inches">
+                                            <label for="15.6inch">15.6 Inches</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="22 Inches">
+                                            <label for="22 Inches"> 22 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23 Inches">
-                            <label for="23 Inches"> 23 Inches </label>
-                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23 Inches">
+                                            <label for="23 Inches"> 23 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23.5 Inches">
-                            <label for="23.5 Inches"> 23.5 Inches </label>
-                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23.5 Inches">
+                                            <label for="23.5 Inches"> 23.5 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23.6 Inches">
-                            <label for="23.6 Inches"> 23.6 Inches </label>
-                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23.6 Inches">
+                                            <label for="23.6 Inches"> 23.6 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23.8 Inches">
-                            <label for="23.8 Inches"> 23.8 Inches </label>
-                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="23.8 Inches">
+                                            <label for="23.8 Inches"> 23.8 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="24 Inches">
-                            <label for="24 Inches"> 24 Inches </label>
-                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="24 Inches">
+                                            <label for="24 Inches"> 24 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="24.5 Inches">
-                            <label for="24.5 Inches"> 24.5 Inches </label>
-                        </li>
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="24.5 Inches">
+                                            <label for="24.5 Inches"> 24.5 Inches </label>
+                                        </li>
 
-                        <li>
-                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="25 Inches">
-                            <label for="25 Inches"> 25 Inches </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid-product-container">
-                <p class="grid-product-title">Màn hình máy tính</p>
-                <div class="grid-product-sort">
-                    <div class="grid-product-sort-block-title">
-                        Sản phẩm bán theo
-                    </div>
-                    <div class="grid-product-sort-block grid-product-sort-active">
-                        Khuyến mãi tốt nhất
-                    </div>
-                    <div class="grid-product-sort-block">
-                        Giá tăng dần
-                    </div>
-                    <div class="grid-product-sort-block">
-                        Giá giảm dần
-                    </div>
-                    <div class="grid-product-sort-block">
-                        Bán chạy nhất
-                    </div>
-                    <div class="grid-product-sort-block">
-                        Sản phẩm mới nhất
-                    </div>
-                </div>
-                <div class="grid-product-card-container">
-                    <!-- <div class="grid-product-card">
+                                        <li>
+                                            <input type="checkbox" class="grid-sidebar-option-checkbox" value="25 Inches">
+                                            <label for="25 Inches"> 25 Inches </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-product-container">
+                                <p class="grid-product-title">Màn hình máy tính</p>
+                                <div class="grid-product-sort">
+                                    <div class="grid-product-sort-block-title">
+                                        Sản phẩm bán theo
+                                    </div>
+                                    <div class="grid-product-sort-block grid-product-sort-active">
+                                        Khuyến mãi tốt nhất
+                                    </div>
+                                    <div class="grid-product-sort-block">
+                                        Giá tăng dần
+                                    </div>
+                                    <div class="grid-product-sort-block">
+                                        Giá giảm dần
+                                    </div>
+                                    <div class="grid-product-sort-block">
+                                        Bán chạy nhất
+                                    </div>
+                                    <div class="grid-product-sort-block">
+                                        Sản phẩm mới nhất
+                                    </div>
+                                </div>
+                                <div class="grid-product-card-container">
+                                    <!-- <div class="grid-product-card">
                         <a class="grid-product-card-img" href="./product_item/monitor/dell/dell_p2419h.html">
                             <img src="../../image/monitors/dell/dell_p2419h.jpg" alt="p2419h">
                             <div class="grid-product-card-discount">
@@ -436,123 +434,115 @@
                         <p class="grid-product-card-star">0 <i class="fa-regular fa-star"></i></p>
                         <p class="grid-product-card-comment">(0 Đánh giá)</p>
                     </div> -->
-                </div>
-                <div class="grid-product-change-page">
-                    <a href="1" class="grid-page grid-page-active">1</a>
-                    <a href="2" class="grid-page">2</a>
-                    <a href="3" class="grid-page">3</a>
-                    <a href="4" class="grid-page">4</a>
-                    <a href="5" class="grid-page">5</a>
-                    <p class="grid-page">...</p>
-                    <a href="20" class="grid-page">20</a>
-                </div>
-            </div>
-        </div>
-    </main>
+                                </div>
+                                <div class="grid-product-change-page">
+                                    <a href="1" class="grid-page grid-page-active">1</a>
+                                    <a href="2" class="grid-page">2</a>
+                                    <a href="3" class="grid-page">3</a>
+                                    <a href="4" class="grid-page">4</a>
+                                    <a href="5" class="grid-page">5</a>
+                                    <p class="grid-page">...</p>
+                                    <a href="20" class="grid-page">20</a>
+                                </div>
+                            </div>
+                        </div>
+                        </main>
 
 
-    <section class="leaveEmail">
-        <div class="leaveEmail--content">
-            <h1 class="leaveEmail--content--heading">
-                Để lại email để nhận thông báo mới nhất
-            </h1>
-            <p class="leaveEmail--content--text">
-                Hãy để lại email của bạn để nhận những thông báo sản phẩm và khuyến mãi mới nhất từ chúng tôi!
-            </p>
+                        <section class="leaveEmail">
+                            <div class="leaveEmail--content">
+                                <h1 class="leaveEmail--content--heading">
+                                    Để lại email để nhận thông báo mới nhất
+                                </h1>
+                                <p class="leaveEmail--content--text">
+                                    Hãy để lại email của bạn để nhận những thông báo sản phẩm và khuyến mãi mới nhất từ chúng tôi!
+                                </p>
 
-        </div>
+                            </div>
 
-        <div class="leaveEmail--email"></div>
-        <form action="" class="leaveEmail--input">
-            <input type="text" placeholder="Email của bạn">
-            <button class="leaveEmail__btn">Gửi</button>
-        </form>
-    </section>
+                            <div class="leaveEmail--email"></div>
+                            <form action="" class="leaveEmail--input">
+                                <input type="text" placeholder="Email của bạn">
+                                <button class="leaveEmail__btn">Gửi</button>
+                            </form>
+                        </section>
 
-    <footer class="footer">
-        <div class="emailForProduct">
+                        <footer class="footer">
+                            <div class="emailForProduct">
 
-        </div>
+                            </div>
 
-        <div class="firstWrapperFooter">
-            <div class="logoInforFooter">
-                <a href="index.html"><img class="logo" src="../../image/logo/logo.png" alt=""></a>
-                <p class="footerSlogan">TUTIKI</p>
-                <p class="footerSlogan">Thế giới mua sắm của bạn</p>
-            </div>
+                            <div class="firstWrapperFooter">
+                                <div class="logoInforFooter">
+                                    <a href="index.html"><img class="logo" src="../../image/logo/logo.png" alt=""></a>
+                                    <p class="footerSlogan">TUTIKI</p>
+                                    <p class="footerSlogan">Thế giới mua sắm của bạn</p>
+                                </div>
 
-            <ul class="flexContainerFooter">
+                                <ul class="flexContainerFooter">
 
-                <li class="customerSupport"><span>Chăm sóc khách hàng</span>
-                    <ul>
-                        <li>Thẻ ưu đãi</li>
-                        <li>Hướng dẫn đăng ký</li>
-                        <li>Hướng dẫn trả góp</li>
-                        <li>Hướng dẫn thanh toán</li>
-                    </ul>
-                </li>
+                                    <li class="customerSupport"><span>Chăm sóc khách hàng</span>
+                                        <ul>
+                                            <li>Thẻ ưu đãi</li>
+                                            <li>Hướng dẫn đăng ký</li>
+                                            <li>Hướng dẫn trả góp</li>
+                                            <li>Hướng dẫn thanh toán</li>
+                                        </ul>
+                                    </li>
 
-                <li class="purchasePolicy"><span>Chính sách mua hàng</span>
-                    <ul>
-                        <li>Chính sách bảo hành</li>
-                        <li>Chính sách thanh toán</li>
-                        <li>Giao hàng và lắp đặt tại nhà</li>
-                        <li>Điều kiện đổi trả</li>
-                        <li>Dịch vụ vệ sinh tại nhà</li>
-                    </ul>
-                </li>
+                                    <li class="purchasePolicy"><span>Chính sách mua hàng</span>
+                                        <ul>
+                                            <li>Chính sách bảo hành</li>
+                                            <li>Chính sách thanh toán</li>
+                                            <li>Giao hàng và lắp đặt tại nhà</li>
+                                            <li>Điều kiện đổi trả</li>
+                                            <li>Dịch vụ vệ sinh tại nhà</li>
+                                        </ul>
+                                    </li>
 
-                <li class="TutikiInformation"><span>Về Tutiki</span>
-                    <ul>
-                        <li>Giới thiệu</li>
-                        <li>Hệ thống cửa hàng</li>
-                        <li>Trung tâm bảo hành</li>
-                        <li>Chính sách bảo mật</li>
-                        <li>Tin công nghệ</li>
-                        <li>Tuyển dụng</li>
-                    </ul>
-                </li>
+                                    <li class="TutikiInformation"><span>Về Tutiki</span>
+                                        <ul>
+                                            <li>Giới thiệu</li>
+                                            <li>Hệ thống cửa hàng</li>
+                                            <li>Trung tâm bảo hành</li>
+                                            <li>Chính sách bảo mật</li>
+                                            <li>Tin công nghệ</li>
+                                            <li>Tuyển dụng</li>
+                                        </ul>
+                                    </li>
 
-                <li class="TutikiCommunity"><span>Liên hệ Tutiki</span>
-                    <ul>
-                        <li>Mua hàng: 18001234</li>
-                        <li>Chăm sóc khách hàng: 18005678</li>
-                        <li>Liên hệ bảo hành: 18001008</li>
+                                    <li class="TutikiCommunity"><span>Liên hệ Tutiki</span>
+                                        <ul>
+                                            <li>Mua hàng: 18001234</li>
+                                            <li>Chăm sóc khách hàng: 18005678</li>
+                                            <li>Liên hệ bảo hành: 18001008</li>
 
-                    </ul>
-                </li>
-            </ul>
+                                        </ul>
+                                    </li>
+                                </ul>
 
-        </div>
+                            </div>
 
-        <hr>
-
-
-        <div class="secondWrapperFooter">
-
-            <div class="contactMedia">
-                <span>LIÊN HỆ NGAY</span>
-                <div class="media">
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000636033/file/facebook_1_0e31d70174824ea184c759534430deec.png"
-                            alt=""></a>
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000722513/file/tiktok-logo_fe1e020f470a4d679064cec31bc676e4.png"
-                            alt=""></a>
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000636033/file/youtube_1_d8de1f41ca614424aca55aa0c2791684.png"
-                            alt=""></a>
-                    <a href="#"><img
-                            src="https://file.hstatic.net/200000636033/file/group_1_54d23abd89b74ead806840aa9458661d.png"
-                            alt=""></a>
-                </div>
-            </div>
+                            <hr>
 
 
-            <div class="logoNotif">
-                <img src="//theme.hstatic.net/200000722513/1001090675/14/logo-bct.png?v=2862" alt="">
-            </div>
-        </div>
+                            <div class="secondWrapperFooter">
 
-    </footer>
+                                <div class="contactMedia">
+                                    <span>LIÊN HỆ NGAY</span>
+                                    <div class="media">
+                                        <a href="#"><img src="https://file.hstatic.net/200000636033/file/facebook_1_0e31d70174824ea184c759534430deec.png" alt=""></a>
+                                        <a href="#"><img src="https://file.hstatic.net/200000722513/file/tiktok-logo_fe1e020f470a4d679064cec31bc676e4.png" alt=""></a>
+                                        <a href="#"><img src="https://file.hstatic.net/200000636033/file/youtube_1_d8de1f41ca614424aca55aa0c2791684.png" alt=""></a>
+                                        <a href="#"><img src="https://file.hstatic.net/200000636033/file/group_1_54d23abd89b74ead806840aa9458661d.png" alt=""></a>
+                                    </div>
+                                </div>
+
+
+                                <div class="logoNotif">
+                                    <img src="//theme.hstatic.net/200000722513/1001090675/14/logo-bct.png?v=2862" alt="">
+                                </div>
+                            </div>
+
+                        </footer>
 </body>

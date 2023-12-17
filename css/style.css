@@ -338,6 +338,10 @@ body {
     display: none;
 }
 
+.myProfile {
+    position: relative;
+}
+
 .myOrder:hover,
 .myProfile:hover {
     cursor: pointer;
@@ -350,6 +354,29 @@ body {
 
 .myProfile i {
     font-size: 18px;
+}
+
+.myProfile .logoutBtn {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .5);
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -60%;
+    z-index: 2;
+    width: 110%;
+    left: -20%;
+    display: none;
+}
+
+.myProfile .logoutBtn:hover {
+    opacity: 0.9;
+}
+
+.myProfile .logoutBtn:active {
+    opacity: 0.8;
 }
 
 
