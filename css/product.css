@@ -1,0 +1,306 @@
+/*Product*/
+.product-container-all {
+    margin: 0 48px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 10px;
+}
+
+/* Image Example */
+.product-img-container {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid lightgray;
+}
+
+.product-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+    transition-duration: 0.5s;
+}
+
+.product-img:hover {
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+}
+
+
+.product-info {
+    padding: 25px;
+    border: 2px solid lightgray;
+}
+
+.product-name,
+.rating-star,
+.rating-count,
+.rating-comment,
+.price-main,
+.price-origin,
+.price-discount,
+.count-addtocart,
+.product-desc-simple {
+    margin: 10px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.rating-star {
+    color: orange;
+}
+
+.price-main {
+    color: red;
+    font-weight: 600;
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.price-origin {
+    color: gray;
+    font-size: 20px;
+    text-decoration: line-through;
+    padding: 5px;
+}
+
+.price-discount {
+    border: 2px solid red;
+    padding: 0 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.product-line {
+    margin-top: 10px;
+    border-top: 2px solid red;
+}
+
+.addtocart {
+    display: flex;
+}
+
+
+.btn-addtocart {
+    display: block;
+    border: none;
+    font-size: 20px;
+    background-color: #57ecd1;
+    cursor: pointer;
+}
+
+.count-addtocart {
+    margin: 0 50px;
+    display: flex;
+}
+
+.btn-minuscount,
+.btn-addcount,
+.display-addtocartcount{
+    display: block;
+    margin: 0;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.display-addtocartcount {
+    padding: 10px 0;
+    width: 50px;
+}
+
+.product-desc-simple ul li{
+    list-style: circle;
+    margin: 0 30px;
+    line-height: 1.5em;
+}
+
+.product-desc-simple ul li ul li {
+    list-style: square;
+}
+
+/* Product Description and Rating */
+/* Product Description */
+.product-desc {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 10px;
+}
+
+.product-detail {
+    border-collapse: collapse;
+}
+
+.product-desc-title,
+.product-desc-cell1,
+.product-desc-cell2 {
+    padding: 5px 5px;
+    border: 2px solid rgb(171, 171, 171);
+}
+
+.product-desc-cell1 {
+    background-color: rgb(171, 171, 171);
+}
+
+.product-desc-cell2 {
+    background-color: lightgray;
+}
+/* Product Description End*/
+
+.product-rating {
+    padding: 50px;
+    text-align: center;
+    border: 2px solid lightgray;
+}
+/* Rating System */
+.rating-table {
+    display: inline-block;
+}
+
+.rating-star-view { 
+    display: flex;
+    align-items: center;
+    color: orange;
+}
+
+.rating-table {
+    width: 75%;
+    margin: 5px auto;
+}
+
+.bar-container {
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 0 5px;
+    width: 300px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.count-5-star,
+.count-4-star,
+.count-3-star,
+.count-2-star,
+.count-1-star {
+    color: black;
+    margin-left: 10px;
+}
+
+.bar-5-star,
+.bar-4-star,
+.bar-3-star,
+.bar-2-star,
+.bar-1-star {
+    background-color: orange;
+    height: 100%;
+}
+
+/*Rating Calculating*/
+
+.bar-5-star {width: 0%;}
+.bar-4-star {width: 0%;}
+.bar-3-star {width: 0%;}
+.bar-2-star {width: 0%;}
+.bar-1-star {width: 0%;}
+
+.product-rating h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.rating-star-ratio {
+    font-size: 30px;
+    color: orange;
+    margin: 5px;
+    padding: 0;
+}
+
+.btn-rating {
+    display: block;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.btn-rating:hover {
+    transition-duration: 0.5s;
+    opacity: 0.8;
+}
+/* Rating System End */
+/* Product Description and Rating End*/
+/* User Comment Section */
+.user-comment-container {
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid lightgray;
+    height: 350px;
+}
+
+.comment-title {
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.user-comment-section {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.user-comment-block {
+    background-color: lightgray;
+}
+
+.user-info {
+    display: flex;
+    padding: 10px;
+}
+
+.user-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    margin: 0 5px;
+}
+
+.user-name,
+.user-rating,
+.user-comment-time {
+    padding: 5px;
+    margin: 0 2px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.user-rating {color: orange;}
+
+.user-comment-time {
+    font-weight: normal;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+.user-comment {
+    padding: 10px;
+}
+/* User Comment Section End*/
+/*Product End*/

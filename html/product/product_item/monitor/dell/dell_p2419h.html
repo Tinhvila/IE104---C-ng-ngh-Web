@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutiki</title>
+    <link rel="shortcut icon" type="image/png" href="../../../../../image/logo.png" />
+    <link rel="stylesheet" href="../../../../../css/style.css">
+    <link rel="stylesheet" href="../../../../../css/root.css">
+    <link rel="stylesheet" href="../../../../../css/product.css">
+    <link rel="stylesheet" href="../../../../../css/slider.css">
+    <link rel="stylesheet" href="../../../../../css/comment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lifelogo-easy" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../../../../../js/nav-open.js"></script>
+    <script src="../../../../../js/comment_rating.js"></script>
+    <script src="../../../../../js/addtocart.js"></script>
+    <script src="../../../../../js/slider.js"></script>
+</head>
+
+<body>
+    <!-- Lớp overlay -->
+    <div id="overlay" onclick="Exit()"></div>
+
+    <!-- Popup Thành công -->
+    <div class="popupSuccess" id="popupSuccess">
+        <img src="../../../../../image/icon/successTickIcon.png" alt="">
+        <h2>THÔNG BÁO</h2>
+        <p id="outputSuccess"></p>
+        <button class="button successButton" id="successButton" onclick="Exit()">THOÁT</button>
+    </div>
+
+    <!-- Header -->
+    <div class="parentHeader">
+        <header class="header">
+            <div class="header__logo">
+                <a href="../../../../../index.html"><img class="logo" src="../../../../../image/logo/logo.png" alt=""></a>
+                <div class="links">
+                    <a href="index.html">
+                        <h2>TUTIKI</h2>
+                    </a>
+                    <a href="index.html">
+                        <p>tutiki.com</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__category">
+                <div class="button category__button">
+                    <i class="fa-solid fa-bars category__icon"></i> <span>Danh mục</span>
+                </div>
+            </div>
+
+            <form action="" class="header__search">
+                <input type="text" placeholder="Bạn đang tìm gì?">
+                <button class="search__btn">
+                <i class="fa fa-search search__icon" aria-hidden="true"></i>
+            </button>
+            </form>
+
+
+            <div class="header__item">
+
+                <div class="header__contact">
+                    <div class="box__contact">
+                        <i class="fa-solid fa-phone contact__icon"></i>
+                        <p>Mua hàng</p>
+                    </div>
+                    <p>090.91299381</p>
+                </div>
+
+                <div class="header__cart">
+                    <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                    <p>Giỏ hàng</p>
+                </div>
+
+                <a class="button" id="signup-btn">Đăng ký</a>
+
+                <a class="button" id="login-btn">Đăng nhập</a>
+                <div class="myOrder">
+                    <ion-icon name="newspaper" class="iconOrder"></ion-icon>
+                    <!-- <img src="/image/icon/pendingOrder.png" width="10" alt=""> -->
+                    <p>Đơn hàng của tôi</p>
+                </div>
+                <div class="myProfile">
+                    <i class="fa-solid fa-user"></i>
+                    <p id="usernameProfile">Phạm Đăng Tỉnh</p>
+                </div>
+            </div>
+
+        </header>
+        <ul class="nav-item">
+            <li class="nav-item-content">
+                <a href="../../../laptop_grid_item.html">Laptop</a>
+                <ul class="nav-item-list">
+                    <li><a href="">DELL</a></li>
+                    <li><a href="">Acer</a></li>
+                    <li><a href="">ASUS</a></li>
+                    <li><a href="">Lenovo</a></li>
+                    <li><a href="">ThinkPad</a></li>
+                    <li><a href="">MSI</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-content">
+                <a href="../../../pc_component_grid_item.html">Linh kiện máy tính</a>
+                <ul class="nav-item-list">
+                    <li><a href="">CPU</a></li>
+                    <li><a href="">Card đồ họa</a></li>
+                    <li><a href="">RAM</a></li>
+                    <li><a href="">Nguồn máy tính</a></li>
+                    <li><a href="">Ổ cứng SSD/HDD</a></li>
+                    <li><a href="">Bo mạch</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-content">
+                <a href="../../../monitor_grid_item.html">Màn hình</a>
+                <ul class="nav-item-list">
+                    <li><a href="">DELL</a></li>
+                    <li><a href="">LG</a></li>
+                    <li><a href="">Samsung</a></li>
+                    <li><a href="">Acer</a></li>
+                    <li><a href="">ASUS</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-content">
+                <a href="../../../case_grid_item.html">Case máy tính</a>
+                <ul class="nav-item-list">
+                    <li><a href="">Corsair</a></li>
+                    <li><a href="">Cooler Master</a></li>
+                    <li><a href="">Antec</a></li>
+                    <li><a href="">NZXT</a></li>
+                    <li><a href="">Fractal Design</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-content">
+                <a href="../../../keyboard_grid_item.html">Bàn phím</a>
+                <ul class="nav-item-list">
+                    <li><a href="">Razor</a></li>
+                    <li><a href="">Logitech</a></li>
+                    <li><a href="">ASUS</a></li>
+                    <li><a href="">Corsair</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-content">
+                <a href="../../../mouse_grid_item.html">Chuột</a>
+                <ul class="nav-item-list">
+                    <li><a href="">DELL</a></li>
+                    <li><a href="">Acer</a></li>
+                    <li><a href="">ASUS</a></li>
+                    <li><a href="">Lenovo</a></li>
+                    <li><a href="">ThinkPad</a></li>
+                    <li><a href="">MSI</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-content">
+                <a href="../../../headphone_grid_item.html">Tai nghe</a>
+                <ul class="nav-item-list">
+                    <li><a href="">DELL</a></li>
+                    <li><a href="">Acer</a></li>
+                    <li><a href="">ASUS</a></li>
+                    <li><a href="">Lenovo</a></li>
+                    <li><a href="">ThinkPad</a></li>
+                    <li><a href="">MSI</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+     <!-- Sign in Form -->
+     <div class="form-authen" id="form-login">
+        <form action="">
+            <div class="authen-form__heading">
+                <h3>ĐĂNG NHẬP</h3>
+                <i class="fa-solid fa-x exit-btn" onclick="Exit()"></i>
+            </div>
+
+            <div class="authen-form__body">
+                <img class="logo" src="../../../../../image/logo/logo.png" alt="">
+
+                <div class="authen-form-group">
+                    <input type="email" placeholder="Email" class="authen-form__input" id="loginUser">
+                    <p class="messageError messageErrorEmailLogin"></p>
+                </div>
+                <div class="authen-form-group">
+                    <input type="password" minlength="8" placeholder="Mật khẩu" class="authen-form__input"
+                        id="loginPassword">
+                    <p class="messageError messageErrorPasswordLogin"></p>
+                </div>
+                <a href="" class="forget-password">Quên mật khẩu?</a>
+
+                <button class="button authen-form__button">ĐĂNG NHẬP</button>
+                <div class="textAndline">
+                    <div class="line">
+                        <span class="text">đăng nhập bằng<span>
+                    </div>
+                </div>
+
+                <div class="authen-by">
+                    <img src="../../../../../image/logo/logo-facebook.png" alt="" class="facebook-icon">
+                    <img src="../../../../../image/logo/logo-google.png" alt="" class="google-icon">
+                    <!-- <i class="fa-brands fa-facebook facebook-icon"></i>
+                    <i class="fa-brands fa-google-plus-g google-icon"></i> -->
+                </div>
+
+                <div class="change-link">
+                    <p>Chưa có tài khoản? <a id="signup-link">Đăng ký ngay!</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Sign up Form -->
+    <div class="form-authen" id="form-signup">
+        <form action="">
+            <div class="authen-form__heading">
+                <h3>ĐĂNG KÝ</h3>
+                <i class="fa-solid fa-x exit-btn" onclick="Exit()"></i>
+            </div>
+
+            <div class="authen-form__body">
+                <img class="logo" src="../../../../../image/logo/logo.png" alt="">
+
+                <div class="authen-form-group">
+                    <input type="text" placeholder="Họ và Tên" class="authen-form__input" id="Name" required>
+                </div>
+
+                <div class="authen-form-group">
+                    <input type="email" placeholder="Email" class="authen-form__input" id="Email" required>
+                    <p class="messageError messageErrorEmail"></p>
+                </div>
+
+                <div class="authen-form-group">
+                    <input type="password" minlength="8" placeholder="Mật khẩu" class="authen-form__input" id="Password"
+                        required>
+                </div>
+
+                <div class="authen-form-group">
+                    <input type="password" minlength="8" placeholder="Nhập lại mật khẩu" class="authen-form__input"
+                        id="retypePassword" required>
+                    <p class="messageError messageErrorPassword"></p>
+                </div>
+
+                <button class="button authen-form__button">ĐĂNG KÝ</button>
+                <div class="textAndline">
+                    <div class="line">
+                        <span class="text">đăng ký bằng<span>
+                    </div>
+                </div>
+
+                <div class="authen-by">
+                    <img src="../../../../../image/logo/logo-facebook.png" alt="" class="facebook-icon">
+                    <img src="../../../../../image/logo/logo-google.png" alt="" class="google-icon">
+                </div>
+
+                <div class="change-link">
+                    <p>Đã có tài khoản? <a id="signin-link">Đăng nhập ngay!</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Comment form -->
+    <section class="comment-container">
+        <button class="btn-rating-close"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Ý kiến bình luận</h2>
+        <p>Xin hãy đánh giá cho sản phẩm và để lại bình luận chon sản phẩm bạn nhé!</p>
+        <div class="comment-rating-star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="comment-information">
+            <input class="comment-username" type="text" placeholder="Họ và tên của bạn">
+            <textarea class="comment-box" placeholder="Ý kiến của bạn"></textarea>
+        </div>
+        <p class="comment-notify"></p>
+        <button class="btn-submit-comment">Gửi ý kiến</button>
+    </section>
+
+    <script src="../../../../../js/main.js"></script>
+    
+
+    <main class="mainContent">
+        <p class="breadcrumb"><i class="fa-solid fa-house-chimney"></i> Trang chủ > Màn hình > DELL > Màn hình DELL P2419H</p>
+        <div class="product-container-all">
+            <div class="product-container">
+                <div class="product-img-container">
+                    <img class="product-img" src="../../../../../image/monitors/dell/dell_p2419h.png" alt="p2419h">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Màn hình DELL 24Inch P2419H</p>
+                    <p> <!-- Rating overview -->
+                        <span class="rating-star">0 <i class="fa-regular fa-star"></i></span>
+                        <span class="rating-comment"><span class="comment-count">0</span> Đánh giá</span>
+                    </p>
+                    <p class="product-price">
+                        <span class="price-main">4.999.000đ</span> 
+                        <span class="price-origin">6.999.000đ</span>
+                        <span class="price-discount">- 28%</span>
+                    </p>
+                    <p class="product-line"></p>
+                    <div class="addtocart">
+                        <button class="btn-addtocart"><i class="fa-solid fa-cart-shopping"></i> Đặt hàng</button>
+                        <div class="count-addtocart">
+                            <button class="btn-minuscount"><i class="fa-solid fa-minus"></i></button>
+                            <p class="display-addtocartcount">0</p>
+                            <button class="btn-addcount"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-desc-simple">
+                        <ul>Thông tin chung:
+                            <li>Thương hiệu: DELL</li>
+                            <li>Kích thước màn hình: 24 inches</li>
+                            <li>Độ phân giải: 1920 x 1080</li>
+                            <li>Tần số quét: 60Hz</li>
+                            <li>Tính năng đặc biệt: 
+                                <ul>
+                                    <li>Độ phân giải Full HD cho hình ảnh rõ nét, sống động</li>
+                                    <li>Góc nhìn lên đến 178 độ, quan sát từ mọi góc xem</li>
+                                    <li>Đa dạng cổng kết nối, thỏa sức chia sẻ khoảnh khắc</li>
+                                    <li>Thiết kế tối giản, mỏng gọn, không chiếm nhiều diện tích</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc">
+                <div class="product-rating">
+                    <h2>Đánh giá: </h2>
+                    <p class="rating-star-ratio"><span class="rating-star">0</span>/5<i class="fa-solid fa-star"></i></p>
+                    <div class="rating-table">
+                        <div class="rating-star-view">5 <i class="fa-solid fa-star"></i></i>
+                            <div class="bar-container">
+                                <div class="bar-5-star"></div>
+                            </div>
+                            <p class="count-5-star"> 0 đánh giá</p>
+                        </div>
+                        <div class="rating-star-view">4 <i class="fa-solid fa-star"></i>
+                            <div class="bar-container">
+                                <div class="bar-4-star"></div>
+                            </div>
+                            <p class="count-4-star"> 0 đánh giá</p>
+                        </div>
+                        <div class="rating-star-view">3 <i class="fa-solid fa-star"></i>
+                            <div class="bar-container">
+                                <div class="bar-3-star"></div>
+                            </div>
+                            <p class="count-3-star"> 0 đánh giá</p>
+                        </div>
+                        <div class="rating-star-view">2 <i class="fa-solid fa-star"></i>
+                            <div class="bar-container">
+                                <div class="bar-2-star"></div>
+                            </div>
+                            <p class="count-2-star"> 0 đánh giá</p>
+                        </div>
+                        <div class="rating-star-view">1 <i class="fa-solid fa-star"></i>
+                            <div class="bar-container">
+                                <div class="bar-1-star"></div>
+                            </div>
+                            <p class="count-1-star"> 0 đánh giá</p>
+                        </div>
+                    </div>
+                    <button class="btn-rating"><i class="fa-regular fa-comment"></i> Thêm đánh giá</button>
+                </div>
+                <table class="product-detail">
+                    <tr>
+                        <td class="product-desc-title" colspan="2">Thông tin sản phẩm</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Thương hiệu</td>
+                        <td class="product-desc-cell2">DELL</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Kích thước màn hình</td>
+                        <td class="product-desc-cell2">24 inches</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Độ phân giải</td>
+                        <td class="product-desc-cell2">1920 x 1080 (16:9)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Tần số quét:</td>
+                        <td class="product-desc-cell2">60 Hz</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Tấm nền</td>
+                        <td class="product-desc-cell2">IPS</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Thời gian phản hồi</td>
+                        <td class="product-desc-cell2">5 ms</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Kiểu màn hình</td>
+                        <td class="product-desc-cell2">Màn hình phẳng</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Độ sáng</td>
+                        <td class="product-desc-cell2">250 cd/m2</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Khả năng hiển thị màu sắc</td>
+                        <td class="product-desc-cell2">16.7 triệu màu</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Độ tương phản tĩnh</td>
+                        <td class="product-desc-cell2">1,000 : 1</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Bề mặt</td>
+                        <td class="product-desc-cell2">Màn hình chống lóa</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Cổng màn hình</td>
+                        <td class="product-desc-cell2">1 x HDMI, 1 x DisplayPort, 1 x VGA/D-sub</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Hỗ trợ HDR</td>
+                        <td class="product-desc-cell2">Không</td>
+                    </tr>
+                    <tr>
+                        <td class="product-desc-cell1">Phụ kiện đi kèm</td>
+                        <td class="product-desc-cell2">Cáp USB, Cáp Displayport</td>
+                    </tr>   
+                </table>
+            </div>
+            <div class="user-comment-container">
+                <p class="comment-title">Đánh giá: <span class="comment-count">0</span></p>
+                <div class="user-comment-section">
+                    <!-- User Comment Here -->
+                    
+                </div>
+            </div>
+            <section class="slider-product">
+                <p class="slider-product-category">Sản phẩm được đề xuất</p>
+                <button class="slider-pre-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="slider-nxt-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <div class="slider-product-container">
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <section class="leaveEmail">
+        <div class="leaveEmail--content">
+            <h1 class="leaveEmail--content--heading">
+                Để lại email để nhận thông báo mới nhất
+            </h1>
+            <p class="leaveEmail--content--text">
+                Hãy để lại email của bạn để nhận những thông báo sản phẩm và khuyến mãi mới nhất từ chúng tôi!
+            </p>
+
+        </div>
+
+        <div class="leaveEmail--email"></div>
+        <form action="" class="leaveEmail--input">
+            <input type="text" placeholder="Email của bạn">
+            <button class="leaveEmail__btn">Gửi</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="emailForProduct">
+
+        </div>
+
+        <div class="firstWrapperFooter">
+            <div class="logoInforFooter">
+                <a href="index.html"><img class="logo" src="../../../../../image/logo/logo.png" alt=""></a>
+                <p class="footerSlogan">TUTIKI</p>
+                <p class="footerSlogan">Thế giới mua sắm của bạn</p>
+            </div>
+
+            <ul class="flexContainerFooter">
+
+                <li class="customerSupport"><span>Chăm sóc khách hàng</span>
+                    <ul>
+                        <li>Thẻ ưu đãi</li>
+                        <li>Hướng dẫn đăng ký</li>
+                        <li>Hướng dẫn trả góp</li>
+                        <li>Hướng dẫn thanh toán</li>
+                    </ul>
+                </li>
+
+                <li class="purchasePolicy"><span>Chính sách mua hàng</span>
+                    <ul>
+                        <li>Chính sách bảo hành</li>
+                        <li>Chính sách thanh toán</li>
+                        <li>Giao hàng và lắp đặt tại nhà</li>
+                        <li>Điều kiện đổi trả</li>
+                        <li>Dịch vụ vệ sinh tại nhà</li>
+                    </ul>
+                </li>
+
+                <li class="TutikiInformation"><span>Về Tutiki</span>
+                    <ul>
+                        <li>Giới thiệu</li>
+                        <li>Hệ thống cửa hàng</li>
+                        <li>Trung tâm bảo hành</li>
+                        <li>Chính sách bảo mật</li>
+                        <li>Tin công nghệ</li>
+                        <li>Tuyển dụng</li>
+                    </ul>
+                </li>
+
+                <li class="TutikiCommunity"><span>Liên hệ Tutiki</span>
+                    <ul>
+                        <li>Mua hàng: 18001234</li>
+                        <li>Chăm sóc khách hàng: 18005678</li>
+                        <li>Liên hệ bảo hành: 18001008</li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <hr>
+
+
+        <div class="secondWrapperFooter">
+
+            <div class="contactMedia">
+                <span>LIÊN HỆ NGAY</span>
+                <div class="media">
+                    <a href="#"><img src="https://file.hstatic.net/200000636033/file/facebook_1_0e31d70174824ea184c759534430deec.png" alt=""></a>
+                    <a href="#"><img src="https://file.hstatic.net/200000722513/file/tiktok-logo_fe1e020f470a4d679064cec31bc676e4.png" alt=""></a>
+                    <a href="#"><img src="https://file.hstatic.net/200000636033/file/youtube_1_d8de1f41ca614424aca55aa0c2791684.png" alt=""></a>
+                    <a href="#"><img src="https://file.hstatic.net/200000636033/file/group_1_54d23abd89b74ead806840aa9458661d.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="logoNotif">
+                <img src="//theme.hstatic.net/200000722513/1001090675/14/logo-bct.png?v=2862" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

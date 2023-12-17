@@ -1,0 +1,106 @@
+.returnSearch {
+    padding: 10px 48px 30px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.returnSearch .returnSearchHeading {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 80px;
+}
+
+.returnSearch .searchContainer {
+    /* padding: 0 48px; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    /* border: 1px solid red; */
+}
+
+
+/* .returnSearch .searchContainer>* {
+    padding: 24px 36px 36px 0;
+} */
+
+.returnSearch .returnSearchHeading #search_keyword {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.imgSearchReturn {
+    height: 100%;
+    width: 20%;
+}
+
+.imgSearchReturn__img {
+    height: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.imgSearchReturn__img:hover {
+    transform: scale(1.02);
+}
+
+.searchContainer .item {
+    padding: 0 24px 24px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    margin-bottom: 48px;
+}
+
+.infoItemSearchReturn {
+    width: 70%;
+    /* height: fit-content; */
+    line-height: 0.5rem;
+}
+
+.priceAndButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchContainer .itemButton {
+    border: 2px solid var(--main-color);
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.searchContainer .itemButton:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.infoItemSearchReturn .nameItem {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.infoItemSearchReturn .newPriceItem {
+    margin-right: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fd2424;
+    font-size: 1.2rem;
+}
+
+.infoItemSearchReturn .oldPriceItem {
+    font-style: italic;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+.infoItemSearchReturn .starOffer,
+.infoItemSearchReturn p i {
+    color: #fabb13;
+    margin-right: 4px;
+}
